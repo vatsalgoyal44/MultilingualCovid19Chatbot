@@ -1,0 +1,115 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: action_custom
+  - intent: mood_great
+  - action: action_custom
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: action_custom
+  - intent: mood_unhappy
+  - action: action_custom
+  - action: action_custom
+  - intent: affirm
+  - action: action_custom
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: action_custom
+  - intent: mood_unhappy
+  - action: action_custom
+  - action: action_custom
+  - intent: deny
+  - action: action_custom
+
+
+- story: corona intro
+  steps:
+  - intent: corona_intro
+  - action: action_custom
+
+
+- story: corona spread
+  steps:
+  - intent: corona_spread
+  - action: action_custom
+
+- story: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: action_custom
+
+- story: corona warm weather
+  steps:
+  - intent: corona_spread_warm
+  - action: action_custom
+
+- story: corona risk
+  steps:
+  - intent: corona_spread_risk
+  - action: action_custom
+
+- story: corona tracker path
+  steps:
+  - intent: greet
+  - action: action_custom
+  - intent: corona_stats_check
+  - action: action_custom
+  - intent: corona_states_stat
+  - action: action_custom
+
+- story: corona tracker 2 path
+  steps:
+  - intent: corona_stats_check
+  - action: action_custom
+  - intent: corona_states_stat
+  - action: action_custom
+
+- story: corona community spread path
+  steps:
+  - intent: corona_community
+  - action: action_custom
+
+- story: corona mosquito path
+  steps:
+  - intent: corona_mosq_spread
+  - action: action_custom
+
+- story: corona prevent path
+  steps:
+  - intent: corona_prevent
+  - action: action_custom
+
+- story: corona symptoms path
+  steps:
+  - intent: corona_symptoms
+  - action: action_custom
+
+- story: corona vaccine path
+  steps:
+  - intent: corona_vaccine
+  - action: action_custom
+
+- story: corona infected path
+  steps:
+  - intent: corona_infected person
+  - action: action_custom
+
+
+
+- story: thanks path
+  steps:
+  - intent: Thanks
+  - action: action_custom
+
+- story: who am i
+  steps:
+  - intent: bot_challenge
+  - action: action_custom
